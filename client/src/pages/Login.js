@@ -12,7 +12,7 @@ function Login() {
 
     try{
 
-      const res = await fetch("https://rentease-backend.onrender.com/api/auth/login",{
+      const res = await fetch("https://rentease-backend-hv56.onrender.com/api/auth/login",{
 
         method:"POST",
 

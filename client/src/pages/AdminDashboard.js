@@ -17,7 +17,7 @@ const [editingId,setEditingId] = useState(null);
 
 useEffect(()=>{
 
-fetch("https://rentease-backend.onrender.com/api/products")
+fetch("https://rentease-backend-hv56.onrender.com/api/products")
 .then(res=>res.json())
 .then(data=>setProducts(data));
 
@@ -39,7 +39,7 @@ setForm({
 const addProduct = async()=>{
 
 await fetch(
-"https://rentease-backend.onrender.com/api/products/add",
+"https://rentease-backend-hv56.onrender.com/api/products/add",
 {
 method:"POST",
 headers:{
@@ -61,7 +61,7 @@ window.location.reload();
 const deleteProduct = async(id)=>{
 
 await fetch(
-`https://rentease-backend.onrender.com/api/products/delete/${id}`,
+`https://rentease-backend-hv56.onrender.com/api/products/delete/${id}`,
 {
 method:"DELETE",
 headers:{
@@ -100,7 +100,7 @@ const updateProduct = async()=>{
 try{
 
 const res = await fetch(
-`https://rentease-backend.onrender.com/api/products/update/${editingId}`,
+`https://rentease-backend-hv56.onrender.com/api/products/update/${editingId}`,
 {
 method:"PUT",
 headers:{

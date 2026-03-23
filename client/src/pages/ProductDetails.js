@@ -13,7 +13,7 @@ function ProductDetail() {
 
   useEffect(() => {
 
-    fetch(`https://rentease-backend.onrender.com/api/products/${id}`)
+    fetch(`https://rentease-backend-hv56.onrender.com/api/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

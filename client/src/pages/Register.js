@@ -13,7 +13,7 @@ const handleRegister = async () =>{
 console.log("Register button clicked");
 try{
 
-const res = await fetch("https://rentease-backend.onrender.com/api/auth/signup",{
+const res = await fetch("https://rentease-backend-hv56.onrender.com/api/auth/signup",{
 
 method:"POST",
 
