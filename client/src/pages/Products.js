@@ -28,7 +28,7 @@ const savedWishlist =
 JSON.parse(localStorage.getItem(`wishlist_${userEmail}`)) || [];
 
     setWishlist(savedWishlist);
-  }, []);
+  }, [setWishlist]);
 
   // ❤️ Wishlist toggle
   const toggleWishlist = (product) => {
