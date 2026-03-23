@@ -10,7 +10,7 @@ const addProduct = async()=>{
 
 const token = localStorage.getItem("token");
 
-await fetch("http://localhost:5000/api/products/add",{
+await fetch("https://rentease-backend.onrender.com/api/products/add",{
 
 method:"POST",
 

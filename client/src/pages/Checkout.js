@@ -74,7 +74,7 @@ const [address, setAddress] = useState("");
 
       //const token = localStorage.getItem("token");
 
-const res = await fetch("http://localhost:5000/api/orders/create", {
+const res = await fetch("https://rentease-backend.onrender.com/api/orders/create", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

@@ -12,7 +12,7 @@ function Products({ wishlist, setWishlist }) {
 
   // 🔗 Fetch products from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://rentease-backend.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

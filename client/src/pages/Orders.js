@@ -15,7 +15,7 @@ setOrders([]);
 return;
 }
 
-const res = await fetch("http://localhost:5000/api/orders/my-orders",{
+const res = await fetch("https://rentease-backend.onrender.com/api/orders/my-orders",{
 
 headers:{
 "Authorization":`Bearer ${localStorage.getItem("token")}`
@@ -38,7 +38,7 @@ fetchOrders();
 
   try {
 
-    await fetch(`http://localhost:5000/api/orders/delete/${id}`, {
+    await fetch(`https://rentease-backend.onrender.com/api/orders/delete/${id}`, {
       method: "DELETE"
     });
 

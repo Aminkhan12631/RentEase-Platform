@@ -6,7 +6,7 @@ const [orders,setOrders] = useState([]);
 
 useEffect(()=>{
 
-fetch("http://localhost:5000/api/orders/all",{
+fetch("https://rentease-backend.onrender.com/api/orders/all",{
 headers:{
 Authorization:`Bearer ${localStorage.getItem("token")}`
 }
@@ -20,7 +20,7 @@ Authorization:`Bearer ${localStorage.getItem("token")}`
 const updateStatus = async(id,status)=>{
 
 await fetch(
-`http://localhost:5000/api/orders/status/${id}`,
+`https://rentease-backend.onrender.com/api/orders/status/${id}`,
 {
 method:"PUT",
 headers:{
